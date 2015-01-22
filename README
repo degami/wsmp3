@@ -1,0 +1,37 @@
+web_server -- README --
+
+package files:
+web_server 	        - compiled executable
+src/*.c                 - source for web_server 
+cgi-bin/FormsHTML.html  - html page with forms
+cgi-bin/pass.c          - source for pass cgi-bin
+cgi-bin/search-engine.c - source for search-engine cgi-bin
+tools/*                 - tools for developement
+
+Installation:
+
+See INSTALL.
+
+Usage:
+
+web_server 
+	(starts the program on port 8000 , no logging , no debugging)
+
+web_server -log 
+	(starts the program on port 8000 , logging , no debugging)
+
+web_server -log -debug 
+	(starts the program on port 8000 , logging , debugging)
+
+web_server -log -debug -port:8001 
+	(starts the program on port 8001 , logging , debugging)
+
+web_server -log -debug -port:8001 -forkon:32768 
+	(starts the program on port 8001 , logging , debugging, 
+	 the program forks itself if the file requested is greater than 32768 Bytes)
+
+web_server --help
+	(shows the help screen and exit)
+
+web_server -h
+	(shows the help screen and exit)

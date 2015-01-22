@@ -1,0 +1,58 @@
+<html>
+ <head>
+    <title>Forms</title>
+    <meta content="">
+    <style></style>
+ </head>
+ <body>
+ <H1>Forms</H1>
+ 
+ <hr width="90%">
+  <form method="post" action="/cgi-bin/upload">
+  <table>
+   <tr>
+    <td>File:</td>
+    <td><input type="file" name="file_to_upload" size=35></td>
+   </tr>
+   <tr>
+    <td><input type="submit" value="Ok"></td>
+    <td><INPUT TYPE="RESET" VALUE="Reset Form"></td>
+   </tr>
+  </table>
+  </form>
+
+  <hr width="90%">
+  <form method="post" action="/cgi-bin/pass">
+  <table>
+  <tr>
+   <td>Login:<input name="nome" size=19></td>
+   <td>pass:<input type="password" name="passwd" size=19></td>
+  </tr>
+  <tr>
+  <td><input type="submit" value="Submit"></td>
+  </tr>
+ </table>
+ </form>
+
+  <hr width="90%">
+  <form method="post" action="/cgi-bin/search-engine">
+  <table>
+  <tr>
+   <td>Cerca:<input name="stringa" size=19></td>
+   <td><input type="radio" name="cosa" value="contenuto">nel contenuto dei files</td>
+   <td><input type="radio" name="cosa" value="nome_file">nei nomi dei files</td>
+   <td>
+    <select name="metodo">
+     <option selected>non ricorsivo
+     <option>ricorsivo
+    </select>
+   </td>
+   <td><input type="submit" value="Vai!"></td>
+  </tr>
+ </table>
+ <input type="hidden" name="startfrom" value="/">
+ </form>
+
+
+ </body>
+</html>

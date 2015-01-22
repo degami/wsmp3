@@ -1,0 +1,6 @@
+Compilation & Installation:
+
+cd src ; make clean ; make ; \ 
+su -c "make install" (if you know what you're doing) ; \ 
+make clean
+

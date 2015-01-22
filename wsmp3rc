@@ -1,0 +1,13 @@
+################# CONFIGURATION #################
+
+#wsmp3_rootDIR : the "/" dir
+wsmp3_rootDIR=/home/mirko/Documents/miei/c/web_server/
+
+#wsmp3_accepted : other outside dirs which are accepted in reading
+wsmp3_accepted=/Export/:/home/mirko/Documents/miei/html/sito_web_server/
+
+#cmdls-follows : (yes/no) let or not cmd:ls show links 
+#pointing outside of wsmp3_roodir or wsmp3_accepted
+cmdls-follows=yes
+
+############## END OF CONFIGURATION ###############
